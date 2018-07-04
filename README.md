@@ -1,5 +1,5 @@
 # APIs REST per cancello
-Java EE RESTful APIs project per cancello
+Java EE RESTful APIs project per WifiGate App
 
 ## Running Application
 
