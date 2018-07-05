@@ -4,7 +4,9 @@ import com.cosmink.models.authority.Authority;
 import com.cosmink.models.BaseEntity;
 import com.cosmink.models.userCredentials.UserCredentials;
 import com.cosmink.models.userGroup.UserGroup;
+import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonView;
 
 import javax.persistence.*;
 import javax.persistence.CascadeType;
