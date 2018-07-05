@@ -4,6 +4,7 @@ import com.cosmink.models.authority.Authority;
 import com.cosmink.models.BaseEntity;
 import com.cosmink.models.userCredentials.UserCredentials;
 import com.cosmink.models.userGroup.UserGroup;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import javax.persistence.CascadeType;
@@ -17,7 +18,7 @@ import java.util.*;
 @XmlRootElement
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "User.findById", query = "SELECT u FROM User u WHERE u.id = :id")
+        @NamedQuery(name = "user.findById", query = "SELECT u FROM User u WHERE u.id = :id")
 
 })
 public class User extends BaseEntity {
@@ -98,7 +99,7 @@ public class User extends BaseEntity {
         this.userGroups = userGroups;
     }*/
 
-   @XmlTransient
+    @JsonIgnore
     Set<UserGroup> userGroups = new HashSet<>();
 
     @ManyToMany(cascade = {

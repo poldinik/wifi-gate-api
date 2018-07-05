@@ -13,7 +13,7 @@ import java.util.Set;
 @XmlRootElement
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "UserGroup.findById", query = "SELECT ug FROM UserGroup ug WHERE ug.id = :id")
+        @NamedQuery(name = "userGroup.findById", query = "SELECT ug FROM UserGroup ug WHERE ug.id = :id")
 
 })
 public class UserGroup extends BaseEntity{
